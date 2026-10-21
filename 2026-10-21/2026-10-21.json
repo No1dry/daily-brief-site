@@ -1,0 +1,991 @@
+{
+  "schemaVersion": 1,
+  "documentType": "public-report-projection",
+  "hero_headline": "美国禁DeepSeek引发中方回应，AI地缘博弈升温",
+  "daily_overview": "科技领域，物理AI与智能体成为焦点：Eka Robotics凭借流畅的通用抓取能力获a16z领投估值14.5亿美元，OpenAI发布Terminal X评估框架匹配资深投资人判断达88.6%，Meta与苹果意外合作开源Muse Spark模型，同时学术前沿关注VLA与世界模型的推理瓶颈。财经方面，印度Jio启动32亿美元创纪录IPO检验市场承接力，马斯克透露特斯拉与SpaceX考虑合并，AI概念股因Super Micro强劲业绩反弹，谷歌云故障波及英国多家银行。时政领域，美国国土安全部禁止联邦机构使用DeepSeek，中国外交部批评此举将经贸问题政治化；英国宣布向沙特派遣战斗机应对胡塞武装；德国投资峰会斩获2250亿欧元承诺，默茨以「可预测」形象招商。",
+  "editor_note": "物理AI与智能体技术加速产业化，但地缘壁垒同步升高。投资者需关注技术突破与政策风险的再平衡，避免单一叙事。",
+  "keywords": [
+    "DeepSeek禁令",
+    "物理AI",
+    "Eka Robotics",
+    "Jio IPO",
+    "特斯拉SpaceX合并",
+    "Meta苹果合作",
+    "胡塞武装",
+    "德国投资峰会"
+  ],
+  "trading": {
+    "market_overview": "美股方面，S&P 500 ETF 与 Nasdaq 100 ETF 短期呈现高位震荡，SPY 距 52 周高点仅 -1.61%，但近 5 日回撤 1.15% 且 MACD 出现死叉；QQQ 近 5 日下跌 3.49%，价格跌破 sma50 726.62，RSI 降至 40.8，显示大型科技股动能有所降温。加密市场总市值报 2.79 万亿美元且 24 小时下跌 1.43%，恐慌贪婪指数处于 63 的「贪婪」区间，BTC 主导率 59.5% 反映资金向比特币集中，ETH-USD 与 SOL-USD 价格分别运行于 sma20 与 sma50 下方，整体技术格局中性偏弱。中概股延续弱势，阿里巴巴、拼多多与京东均呈空头排列，腾讯控股更逼近 52 周低点，RSI 仅 35.2，MACD 死叉，下行压力显著。商品与外汇市场分化明显：WTI 原油期货近 5 日大涨 4.43%，价格站稳于所有均线上方，多头排列完好；黄金期货则处于空头排列，RSI 39.3；美元 / 人民币汇率 RSI 跌至 18.4 的超卖水平，接近 52 周低点。整体来看，各资产类别技术信号不一，短期缺乏统一方向。",
+    "watchlist": [
+      {
+        "symbol": "CL=F",
+        "display_name": "WTI 原油期货 (CL=F)",
+        "stance": "偏上行",
+        "rationale": "WTI 原油期货当前报 99.3 美元，近 5 日上涨 4.43%，价格站稳于 sma20 94.05、sma50 92.21 与 sma200 84.85 之上，呈多头排列；RSI 14 读数 58.5 处于正常区间，MACD 2.2468 上穿信号线 1.34 形成金叉，短期动量偏上行。"
+      },
+      {
+        "symbol": "AAPL",
+        "display_name": "Apple (AAPL)",
+        "stance": "偏上行",
+        "rationale": "Apple 当前价 339.50 美元，位于 sma20 337.61、sma50 326.92 与 sma200 293.16 上方，维持多头排列；RSI 14 为 55.5，虽 MACD 3.7954 略低于信号线 3.9378 形成死叉，但距 52 周高点仅 -2.48%，整体技术结构仍偏上行。"
+      },
+      {
+        "symbol": "USDCNY=X",
+        "display_name": "美元 / 人民币 (USDCNY=X)",
+        "stance": "偏下行",
+        "rationale": "美元 / 人民币当前报 6.68，RSI 14 读数 18.4 进入超卖区域，且价格距 52 周低点仅 0.18%；sma20 6.70、sma50 6.71 与 sma200 6.81 呈空头排列，MACD 负值运行，技术形态显示偏弱下行。"
+      },
+      {
+        "symbol": "0700.HK",
+        "display_name": "腾讯控股 (0700.HK)",
+        "stance": "偏下行",
+        "rationale": "腾讯控股当前价 404.80 港元，近 5 日下跌 4.80%，RSI 14 降至 35.2；MACD -6.8416 与信号线 -5.5583 形成死叉，价格逼近 52 周低点（距低点仅 0.45%），且 sma20 426.24、sma50 435.22 与 sma200 487.72 呈空头排列，技术面偏下行。"
+      },
+      {
+        "symbol": "SPY",
+        "display_name": "S&P 500 ETF (SPY)",
+        "stance": "中性",
+        "rationale": "S&P 500 ETF 当前价 769.05 美元，处于 sma20 770.62 与 sma50 768.29 之间，RSI 14 为 49.7 接近中轴；MACD 0.9602 低于信号线 1.9793 形成死叉，但中长期均线仍呈多头排列且距 52 周高点仅 -1.61%，技术方向暂视为中性。"
+      }
+    ],
+    "risk_caveat": "本报告仅基于历史行情数据的技术指标进行客观解读，过去走势不代表未来表现，不构成任何投资建议。所有分析结论仅供技术指标解读参考，投资者应结合自身风险承受能力独立判断。",
+    "tickers": [
+      {
+        "symbol": "SPY",
+        "displayName": "S&P 500 ETF",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "PCX",
+        "currentPrice": 769.05,
+        "pct1Day": 0.33530158604771754,
+        "pct5Day": -1.151657389128482,
+        "pct52WeekHigh": -1.6081983572580087,
+        "pct52WeekLow": 22.211098398169334,
+        "sma20": 770.6164947509766,
+        "sma50": 768.2865954589844,
+        "sma200": 725.8667993164063,
+        "rsi14": 49.67709478849957,
+        "macd": 0.9602080406922369,
+        "macdSignal": 1.9792536011840802,
+        "macdHistogram": -1.0190455604918434,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 3
+          },
+          {
+            "type": "near-52w-high",
+            "label": "接近 52 周高"
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "QQQ",
+        "displayName": "Nasdaq 100 ETF",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NGM",
+        "currentPrice": 717.63,
+        "pct1Day": -0.10161832040314059,
+        "pct5Day": -3.4885763369565463,
+        "pct52WeekHigh": -5.929004011220934,
+        "pct52WeekLow": 29.163066954643625,
+        "sma20": 739.8720031738281,
+        "sma50": 726.6152001953125,
+        "sma200": 675.9520498657226,
+        "rsi14": 40.79309623850454,
+        "macd": -1.2729834351662248,
+        "macdSignal": 3.6903295975891313,
+        "macdHistogram": -4.963313032755356,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "AAPL",
+        "displayName": "Apple",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 339.5,
+        "pct1Day": -1.0030916244581292,
+        "pct5Day": -0.5186477190061286,
+        "pct52WeekHigh": -2.4845612523337577,
+        "pct52WeekLow": 39.4708733875606,
+        "sma20": 337.60950164794923,
+        "sma50": 326.91640014648436,
+        "sma200": 293.16254974365233,
+        "rsi14": 55.531360834427474,
+        "macd": 3.7953827716430624,
+        "macdSignal": 3.937825719111618,
+        "macdHistogram": -0.14244294746855557,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 0
+          },
+          {
+            "type": "near-52w-high",
+            "label": "接近 52 周高"
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "MSFT",
+        "displayName": "Microsoft",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 531.87,
+        "pct1Day": -0.3092704061414041,
+        "pct5Day": -2.130833001549323,
+        "pct52WeekHigh": -3.9460377085891825,
+        "pct52WeekLow": 52.31099656357389,
+        "sma20": 523.5095016479493,
+        "sma50": 506.7192004394531,
+        "sma200": 435.7961492919922,
+        "rsi14": 58.34264870004452,
+        "macd": 10.107181114129276,
+        "macdSignal": 10.733991227934256,
+        "macdHistogram": -0.6268101138049804,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 1
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "NVDA",
+        "displayName": "Nvidia",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 216.47,
+        "pct1Day": -0.28559415373780295,
+        "pct5Day": -5.273063209859695,
+        "pct52WeekHigh": -11.053128980564574,
+        "pct52WeekLow": 31.776952578072677,
+        "sma20": 227.04250106811523,
+        "sma50": 222.91760040283202,
+        "sma200": 203.26205001831056,
+        "rsi14": 40.90296334809704,
+        "macd": -1.3149505346698334,
+        "macdSignal": 1.0062077067758897,
+        "macdHistogram": -2.321158241445723,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "GOOGL",
+        "displayName": "Alphabet",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 340.275,
+        "pct1Day": -1.1345786387588743,
+        "pct5Day": -3.8173437802858645,
+        "pct52WeekHigh": -16.723770832823483,
+        "pct52WeekLow": 36.49765333547274,
+        "sma20": 345.33049926757815,
+        "sma50": 344.03319946289065,
+        "sma200": 341.1821994018555,
+        "rsi14": 44.66365578429185,
+        "macd": 0.11315930282233921,
+        "macdSignal": 0.8793079076715291,
+        "macdHistogram": -0.7661486048491899,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 2
+          }
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "displayName": "Tesla",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 373.71,
+        "pct1Day": 1.5350764763581164,
+        "pct5Day": -0.40508779730401906,
+        "pct52WeekHigh": -25.082693502796545,
+        "pct52WeekLow": 25.667496132893934,
+        "sma20": 369.7119995117188,
+        "sma50": 361.1083984375,
+        "sma200": 387.26124923706055,
+        "rsi14": 53.680729720721104,
+        "macd": 1.5986237104350494,
+        "macdSignal": 2.7669790188152303,
+        "macdHistogram": -1.168355308380181,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 4
+          }
+        ]
+      },
+      {
+        "symbol": "META",
+        "displayName": "Meta",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 694.25,
+        "pct1Day": -1.5862443868620408,
+        "pct5Day": -8.950819672131148,
+        "pct52WeekHigh": -10.973045061680907,
+        "pct52WeekLow": 33.44289393764656,
+        "sma20": 731.8669982910156,
+        "sma50": 659.4935974121094,
+        "sma200": 632.4230471801758,
+        "rsi14": 46.39689058080248,
+        "macd": 12.340943523853412,
+        "macdSignal": 21.32973028961421,
+        "macdHistogram": -8.9887867657608,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "BTC-USD",
+        "displayName": "Bitcoin",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 82654.29,
+        "pct1Day": 0.9782728354464589,
+        "pct5Day": 0.6243242531201098,
+        "pct52WeekHigh": -28.91378941564492,
+        "pct52WeekLow": 43.12984852089341,
+        "sma20": 83199.9328125,
+        "sma50": 81564.1646875,
+        "sma200": 72648.826796875,
+        "rsi14": 51.50831001867411,
+        "macd": 17.672452436410822,
+        "macdSignal": 318.4056939884212,
+        "macdHistogram": -300.7332415520104,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "ETH-USD",
+        "displayName": "Ethereum",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 2443.56,
+        "pct1Day": 1.6111348051186751,
+        "pct5Day": 0.12620548236000514,
+        "pct52WeekHigh": -42.513533160654674,
+        "pct52WeekLow": 62.20048244082664,
+        "sma20": 2532.1029541015623,
+        "sma50": 2549.8840869140627,
+        "sma200": 2151.234310913086,
+        "rsi14": 42.78457940277987,
+        "macd": -47.421779871085164,
+        "macdSignal": -31.67134295325399,
+        "macdHistogram": -15.750436917831173,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "SOL-USD",
+        "displayName": "Solana",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 105.91,
+        "pct1Day": 0.9375811965644137,
+        "pct5Day": 0.5500950681194733,
+        "pct52WeekHigh": -48.34163780566828,
+        "pct52WeekLow": 75.30495879149981,
+        "sma20": 110.99831886291504,
+        "sma50": 109.4363557434082,
+        "sma200": 87.83140975952148,
+        "rsi14": 43.322670269673736,
+        "macd": -2.0747537310029145,
+        "macdSignal": -1.0365493349037558,
+        "macdHistogram": -1.0382043960991587,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "BABA",
+        "displayName": "阿里巴巴 (BABA)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "currentPrice": 108.61,
+        "pct1Day": 0.03684287122429419,
+        "pct5Day": -2.020747410875284,
+        "pct52WeekHigh": -40.487671232876714,
+        "pct52WeekLow": 18.0671812153495,
+        "sma20": 109.14299964904785,
+        "sma50": 113.79619934082031,
+        "sma200": 128.52569969177247,
+        "rsi14": 45.11445763401137,
+        "macd": -0.8785772149532249,
+        "macdSignal": -1.1641082707390218,
+        "macdHistogram": 0.28553105578579685,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "PDD",
+        "displayName": "拼多多 (PDD)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 81.63,
+        "pct1Day": 0.29487727257813734,
+        "pct5Day": -0.40263431937394834,
+        "pct52WeekHigh": -41.446094254357654,
+        "pct52WeekLow": 13.469557964970807,
+        "sma20": 79.29649925231934,
+        "sma50": 81.76899948120118,
+        "sma200": 92.63554988861084,
+        "rsi14": 54.95320927598502,
+        "macd": 0.2580938350569255,
+        "macdSignal": -0.2930778315968421,
+        "macdHistogram": 0.5511716666537676,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "JD",
+        "displayName": "京东 (JD)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 26.76,
+        "pct1Day": -0.07468516106304685,
+        "pct5Day": -0.07468516106304685,
+        "pct52WeekHigh": -23.671525143329806,
+        "pct52WeekLow": 9.18883629835157,
+        "sma20": 26.704500198364258,
+        "sma50": 27.683800086975097,
+        "sma200": 28.75525008201599,
+        "rsi14": 46.031229734476,
+        "macd": -0.1938475591564064,
+        "macdSignal": -0.3042331872336764,
+        "macdHistogram": 0.11038562807727004,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "0700.HK",
+        "displayName": "腾讯控股 (0700.HK)",
+        "group": "china-equity",
+        "currency": "HKD",
+        "exchangeName": "HKG",
+        "currentPrice": 404.8,
+        "pct1Day": -1.364520950235895,
+        "pct5Day": -4.797744972099956,
+        "pct52WeekHigh": -39.036144578313255,
+        "pct52WeekLow": 0.4466501240694818,
+        "sma20": 426.23999786376953,
+        "sma50": 435.2199981689453,
+        "sma200": 487.7190003967285,
+        "rsi14": 35.23230986287241,
+        "macd": -6.841565831814535,
+        "macdSignal": -5.558281413664766,
+        "macdHistogram": -1.2832844181497691,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 3
+          },
+          {
+            "type": "near-52w-low",
+            "label": "接近 52 周低"
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "GC=F",
+        "displayName": "黄金期货",
+        "group": "commodity-fx",
+        "currency": "USD",
+        "exchangeName": "CMX",
+        "currentPrice": 4132.5,
+        "pct1Day": -0.24381058799193076,
+        "pct5Day": 0.5988485172731324,
+        "pct52WeekHigh": -26.023056818588664,
+        "pct52WeekLow": 5.926229718299023,
+        "sma20": 4181.935009765625,
+        "sma50": 4357.907978515625,
+        "sma200": 4537.262501220703,
+        "rsi14": 39.3364841301677,
+        "macd": -52.35154247598439,
+        "macdSignal": -55.91779140154952,
+        "macdHistogram": 3.5662489255651337,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 3
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "CL=F",
+        "displayName": "WTI 原油期货",
+        "group": "commodity-fx",
+        "currency": "USD",
+        "exchangeName": "NYM",
+        "currentPrice": 99.3,
+        "pct1Day": -2.4462136684660494,
+        "pct5Day": 4.427388604737812,
+        "pct52WeekHigh": -16.889856042852365,
+        "pct52WeekLow": 80.61113132048018,
+        "sma20": 94.0495002746582,
+        "sma50": 92.20740081787109,
+        "sma200": 84.84955005645752,
+        "rsi14": 58.549450432777846,
+        "macd": 2.2467663528699404,
+        "macdSignal": 1.3400401094097512,
+        "macdHistogram": 0.9067262434601893,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "USDCNY=X",
+        "displayName": "美元 / 人民币",
+        "group": "commodity-fx",
+        "currency": "CNY",
+        "exchangeName": "CCY",
+        "currentPrice": 6.6783,
+        "pct1Day": -0.18831321978295737,
+        "pct5Day": -0.20472074778213883,
+        "pct52WeekHigh": -7.128454018273095,
+        "pct52WeekLow": 0.18301555632228722,
+        "sma20": 6.699850010871887,
+        "sma50": 6.711214008331299,
+        "sma200": 6.8062094831466675,
+        "rsi14": 18.40230367661603,
+        "macd": -0.00746976800968735,
+        "macdSignal": -0.006517060973744642,
+        "macdHistogram": -0.0009527070359427077,
+        "trend": "bearish",
+        "rsiState": "oversold",
+        "signals": [
+          {
+            "type": "rsi-oversold",
+            "label": "RSI 超卖"
+          },
+          {
+            "type": "near-52w-low",
+            "label": "接近 52 周低"
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "^VIX",
+        "displayName": "VIX 恐慌指数",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "CXI",
+        "currentPrice": 17.31,
+        "pct1Day": -6.127985365133655,
+        "pct5Day": 13.359525088940893,
+        "pct52WeekHigh": -50.963172804532576,
+        "pct52WeekLow": 29.372197309417025,
+        "sma20": 16.06400008201599,
+        "sma50": 15.700600051879883,
+        "sma200": 18.159550037384033,
+        "rsi14": 54.61263039165401,
+        "macd": 0.5310320423127486,
+        "macdSignal": 0.20714220909354436,
+        "macdHistogram": 0.3238898332192042,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 4
+          }
+        ]
+      },
+      {
+        "symbol": "^TNX",
+        "displayName": "10Y 美债收益率 (%)",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "CGI",
+        "currentPrice": 5.117,
+        "pct1Day": -0.36994072866026134,
+        "pct5Day": -1.916810570886592,
+        "pct52WeekHigh": -4.60477255779269,
+        "pct52WeekLow": 29.642766658221433,
+        "sma20": 5.209049987792969,
+        "sma50": 4.961939973831177,
+        "sma200": 4.513579978942871,
+        "rsi14": 50.24434682995855,
+        "macd": 0.04495685117564996,
+        "macdSignal": 0.07866750845772989,
+        "macdHistogram": -0.033710657282079934,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "DX-Y.NYB",
+        "displayName": "美元指数 DXY",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "NYB",
+        "currentPrice": 101.777,
+        "pct1Day": 0.04619742604501166,
+        "pct5Day": -0.7537815980050928,
+        "pct52WeekHigh": -1.1393880524526487,
+        "pct52WeekLow": 6.517006802721093,
+        "sma20": 101.87685012817383,
+        "sma50": 100.47153991699219,
+        "sma200": 99.52463512420654,
+        "rsi14": 54.66243225260846,
+        "macd": 0.4077294283893025,
+        "macdSignal": 0.5237009614427846,
+        "macdHistogram": -0.11597153305348207,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 3
+          },
+          {
+            "type": "near-52w-high",
+            "label": "接近 52 周高"
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      }
+    ],
+    "crypto_fear_greed": {
+      "value": 63,
+      "classification": "Greed",
+      "classificationCn": "贪婪",
+      "timestamp": "2026-10-21T00:00:00.000Z"
+    },
+    "crypto_global": {
+      "totalMarketCapUsd": 2788519990623.466,
+      "total24hVolumeUsd": 81888747004.31007,
+      "marketCapChangePct24h": -1.426956466506172,
+      "btcDominance": 59.48624593270373,
+      "ethDominance": 10.695441037849758,
+      "activeCryptocurrencies": 22406
+    },
+    "generated_at": "2026-10-21T03:23:22.705Z"
+  },
+  "deliveryPolicyVersion": "daily-delivery-v1",
+  "tech_briefs": [
+    {
+      "title": "Eka Robotics获a16z领投A轮，估值14.5亿美元",
+      "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+      "source": "TechCrunch AI",
+      "summary": "Eka Robotics开发物理AI模型驱动的机械臂，以流畅、类人化的通用物体抓取能力获行业专家高度评价，成为物理AI落地关键进展。",
+      "importance": 9
+    },
+    {
+      "title": "OpenAI发布Terminal X评估投资匹配度达88.6%",
+      "url": "https://openai.com/index/terminal-x",
+      "source": "OpenAI News",
+      "summary": "Terminal X的Eval Agent基于54项标准评分体系，配合GPT-6.1 Sol对资深投资人判断匹配度达88.6%，基金授权偏离识别率提升25%。",
+      "importance": 8
+    },
+    {
+      "title": "Meta与苹果合作开源Muse Spark模型",
+      "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/",
+      "source": "Stratechery",
+      "summary": "Meta推出开源模型Muse Spark，并与苹果合作确保本地运行能力，文章同时讨论「薄与厚」的产业策略分化路径。",
+      "importance": 8
+    },
+    {
+      "title": "Cloudflare开源安全审计技能供AI Agent代码检查",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "GitHub Trending",
+      "summary": "该项目将安全审计流程结构化，让AI Agent在CI或开发流程中自动执行分阶段代码安全检查，产出机器可读且经独立验证的审计发现，减少人工误报。采用技能化设计，便于集成到各类编码Agent工作流中。",
+      "importance": 7
+    },
+    {
+      "title": "今日 X 技术摘要",
+      "url": "https://x.com/thsottiaux/status/2112712984644784534",
+      "source": "Tibo / Thibault Sottiaux X",
+      "summary": "含原文摘录；未完成全部帖子的模型归纳。\n@thsottiaux 分享 @OpenAIDevs：“You can now choose 12-hour prompt caching in the API.” [1]\n@arena：“DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai  landed in the Arena as the #1 open model in both” [2]\n@hwchase17 分享 @kir_lev：“We at Ramp tried a bunch of agent harnesses and ended up building our own. Cloud-native, model-agnos” [3]\n@hwchase17 分享 @caspar_br：“Every agent team landed on the same core primitives:” [4]\n@arena 分享 @arena：“Muse Wonder Full (Max) by @AIatMeta has just debuted in the Code Arena: WebDev at #6 overall with 17” [5]\n@MiniMax_AI 分享 @p0：“MiniMax M3.1 Flash is now #1 on our search capabilities leaderboard for efficiency.” [6]\n@HamelHusain 分享 @iScienceLuvr：“Introducing Holon-S1, our platform to predict genes and biomarkers from routine pathology slides.” [7]\n@hwchase17：“calibrate it on human labels, flag low scorers, confirm the real failures, add them to evals, fix, r” [8]\n@OpenAI：“We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process o” [9]\n@LangChain 分享 @LangChain：“What is a Managed Deep Agent?\n\nHow does it differ from a Deep Agent?\n\nHow do you get started?” [10]\nOpenAI API 新增 12 小时提示缓存：OpenAI 开发者账号宣布 API 可选择 12 小时提示缓存，让持久化 Agent 跨数小时复用共享指令、工具与上下文，并按较低缓存输入价计费。 [11]\nLangChain 推出托管 Deep Agents：Harrison Chase 称 deep agents 是 Agent 循环的 harness，托管版在其上为大量调用同一 Agent 的用户增加各自凭据与独立记忆。 [12]\nArena：GPT-6 系列占据 Agent 帕累托前沿：Arena 称 GPT-6 Luna 与 GPT-6.1 Sol 按不同推理档位共占 11 个前沿位中的 6 个，加上 GPT-6 Astra 后 OpenAI 共占 7 个；切换推理档位可保持最优性价比。 [13]\nNVIDIA 开源机器人数据引擎 Flora：Jim Fan 宣布开源 Flora 系列模型，可将原始视频解析为带时间戳字幕、密集进度奖励与评分 rubric；已每天在 500 块 GPU 上标注 20 万小时视频，成本降低 125 倍。 [14]\nOpenClaw 前端由 Lit 迁移至 Solid 2.0：Peter Steinberger 称用约 6 天移除 Lit、再用一周改为惯用 Solid 写法，全程约 600 个 PR、基本自动完成，JS 与 CSS 体积更小、更新粒度更细。 [15]\nOpenAI 修复约 4 万账号用量限额问题：Tibo 称周末部分用户用量消耗异常，已定位约 4 万个账号的已用限额与其所选套餐不一致，已修复并逐个联系受影响用户、补发额度。 [16]\nHamel Husain：用决策模型做评估：Hamel Husain 发布新博文，讲解如何为任务选择决策模型、调整阈值（不应假设 0.5 默认值合适）并解读其评分。 [17]\nMistral 发布 Voxtral 3 语音模型：Mistral 发布 Voxtral 3 TTS 及三个语音转文字模型；Small Transcribe 3 以 2.1% AA-WER 位列第 3，实时版 960ms 为 3.3%，TTS 定价 $13/百万字符。 [18]\nArtificial Analysis：智能阈值成本快速下降：报告称达到智能指数 30 的成本比首次达成时低 86 倍，GPT-6 Luna (high) 为 $0.03/任务；最高分一年内从 21 升至 58，成本约 11 倍。 [19]\nAnthropic：Claude 设计抗蝎毒蛋白结合体：Anthropic 科学博客称全球每年约 120 万人被蝎子蜇伤且抗毒血清昂贵或短缺，Claude 在寻找新疗法上迈出早期一步，设计针对蝎神经毒素的蛋白结合体。 [20]\n@ArtificialAnlys：“Clustering models on their 30 personality traits gives three emergent families” [21]\n@LangChain：“Human In The Loop: Now in beta in Managed Deep Agents” [22]\n@MistralAI：“Introducing Voxtral 3: state-of-the-art Transcribe and Speech models powering Mistral’s new voice ag” [23]\n@steipete 分享 @voidzerodev：“Introducing tsrs: a Rust port of the TypeScript compiler 🦀” [24]\n@natolambert 分享 @ValsAI：“We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task.” [25]\n@OpenAIDevs：“You can now automate recurring engineering work with team tasks in ChatGPT, like pulling together wh” [26]\n@GoogleDeepMind：“Gemini 4 Argon built a 3D periodic table synced to Tom Lehrer’s song, “The Elements.”” [27]\n@du_yilun：“Market-Based Post-Training (MPT), which trains LLM agents to cooperatively solve complex embodied ta” [28]\n@Thom_Wolf 分享 @deepseek_ai：“Introducing DeepInfer, our in-house inference framework, now fully open source!” [29]\n@natolambert 分享 @deepseek_ai：“Introducing DeepInfer, our in-house inference framework, now fully open source!” [30]\nDeepSeek 开源推理框架 DeepInfer：DeepSeek 开源内部推理框架 DeepInfer，支撑 DeepSeek-V4.1-Flash 大规模高吞吐低延迟服务。 [31]\nHarrison Chase 的 Agent 构建路线：Harrison Chase 赞同先用 deepagents harness，再加 skills/tools 上下文，必要时用 middleware 微调，最后才用 langgraph 编排工作流。 [32]\nPi 与 Pi Durable 的工程设计原则：Kaushik Gopal 称与 Mario Zechner、Armin Ronacher 在播客探讨 Pi 及新库 Pi Durable：原语保持简单、显式状态优于自动检查点、部分工程问题无法靠机器学习解决。Mario Zechner 推荐该期节目。 [33]",
+      "importance": 8,
+      "kind": "twitter-radar",
+      "summaryVersion": "x-daily-v2",
+      "summaryCoverage": {
+        "inputPosts": 33,
+        "representedPosts": 33,
+        "inputHash": "958011323b9825354aaa289d736846394e83e9968f0c0a8e378a2c7e054b4991",
+        "complete": true
+      },
+      "references": [
+        {
+          "url": "https://x.com/thsottiaux/status/2112712984644784534",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "You can now choose 12-hour prompt caching in the API."
+        },
+        {
+          "url": "https://x.com/arena/status/2112683123406479810",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "DeepSeek-V4.1-Flash-20261017 (Max) by @deepseek_ai  landed in the Arena as the #1 open model in both the Agent Arena and the Code Arena: WebDev!"
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2112650555852275951",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "We at Ramp tried a bunch of agent harnesses and ended up building our own. Cloud-native, model-agnostic, tailored to our infrastructure and product."
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2112645417804718259",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "Every agent team landed on the same core primitives:"
+        },
+        {
+          "url": "https://x.com/arena/status/2112639437482176693",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "Muse Wonder Full (Max) by @AIatMeta has just debuted in the Code Arena: WebDev at #6 overall with 1726 pts"
+        },
+        {
+          "url": "https://x.com/MiniMax_AI/status/2112638721040482341",
+          "source": "MiniMax X",
+          "sourceId": "org-minimax-x",
+          "quote": "MiniMax M3.1 Flash is now #1 on our search capabilities leaderboard for efficiency."
+        },
+        {
+          "url": "https://x.com/HamelHusain/status/2112622251564831033",
+          "source": "Hamel Husain X",
+          "sourceId": "person-hamel-husain-x",
+          "quote": "Introducing Holon-S1, our platform to predict genes and biomarkers from routine pathology slides."
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2112621016518377491",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "calibrate it on human labels, flag low scorers, confirm the real failures, add them to evals, fix, rerun"
+        },
+        {
+          "url": "https://x.com/OpenAI/status/2112607347688583586",
+          "source": "OpenAI X",
+          "sourceId": "org-openai-x",
+          "quote": "We’ve acquired Orchestra Bio, a platform that helps biopharma teams coordinate the complex process of drug development."
+        },
+        {
+          "url": "https://x.com/LangChain/status/2112607248568730035",
+          "source": "LangChain X",
+          "sourceId": "org-langchain-x",
+          "quote": "What is a Managed Deep Agent?\n\nHow does it differ from a Deep Agent?\n\nHow do you get started?"
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+          "source": "OpenAI Developers X",
+          "sourceId": "org-openai-devs-x",
+          "quote": "You can now choose 12-hour prompt caching in the API."
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2112602732984938689",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "deep agents is the harness - the agent loop\n\nmanaged deep agents adds what you need once lots of people call the same agent: each user's own credentials and their own memory"
+        },
+        {
+          "url": "https://x.com/arena/status/2112600237491810662",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "GPT-6 Luna and GPT-6.1 Sol by @OpenAI now hold 6 of the 11 spots on the Agent Arena Pareto frontier across their reasoning efforts!"
+        },
+        {
+          "url": "https://x.com/DrJimFan/status/2112597587987689912",
+          "source": "Jim Fan X",
+          "sourceId": "person-jim-fan-x",
+          "quote": "We built a robotics data engine with Astra-level performance at 125x lower cost. And we are open-sourcing the weights today!"
+        },
+        {
+          "url": "https://x.com/steipete/status/2112597162924351909",
+          "source": "Peter Steinberger X",
+          "sourceId": "person-peter-steinberger-x",
+          "quote": "Two weeks ago I kicked off a loop to move OpenClaw's Lit-based Web frontend to Solid 2.0."
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2112592264686149749",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "We've identified approximately 40,000 accounts that had an inconsistency on which usage limits where the actual usage that was applied did not correspond to their actual selected plan."
+        },
+        {
+          "url": "https://x.com/HamelHusain/status/2112588257104216294",
+          "source": "Hamel Husain X",
+          "sourceId": "person-hamel-husain-x",
+          "quote": "In this post, we show you how to choose a decision model for your task, tune its threshold (don't assume the 0.5 default is good!), and interpret its scores."
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2112587905222709432",
+          "source": "Artificial Analysis X",
+          "sourceId": "org-artificial-analysis-x",
+          "quote": "Mistral has released new Speech models! Voxtral Small Transcribe 3 takes the #3 spot on the Artificial Analysis Speech to Text leaderboard, and Voxtral 3 TTS enters the top 12 in both Text to Speech arenas"
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2112582116651466965",
+          "source": "Artificial Analysis X",
+          "sourceId": "org-artificial-analysis-x",
+          "quote": "Once Intelligence Index thresholds are reached, the cost of accessing that level of intelligence reduces fast. Reaching 30 on the Intelligence Index now costs 86x less per task than when first reached"
+        },
+        {
+          "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+          "source": "Anthropic X",
+          "sourceId": "org-anthropic-x",
+          "quote": "New on our Science Blog: designing protein binders against scorpion neurotoxins."
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2112578038990835765",
+          "source": "Artificial Analysis X",
+          "sourceId": "org-artificial-analysis-x",
+          "quote": "Clustering models on their 30 personality traits gives three emergent families"
+        },
+        {
+          "url": "https://x.com/LangChain/status/2112574657304166824",
+          "source": "LangChain X",
+          "sourceId": "org-langchain-x",
+          "quote": "Human In The Loop: Now in beta in Managed Deep Agents"
+        },
+        {
+          "url": "https://x.com/MistralAI/status/2112574615318876178",
+          "source": "Mistral AI X",
+          "sourceId": "org-mistral-x",
+          "quote": "Introducing Voxtral 3: state-of-the-art Transcribe and Speech models powering Mistral’s new voice agents API."
+        },
+        {
+          "url": "https://x.com/steipete/status/2112571535731106013",
+          "source": "Peter Steinberger X",
+          "sourceId": "person-peter-steinberger-x",
+          "quote": "Introducing tsrs: a Rust port of the TypeScript compiler 🦀"
+        },
+        {
+          "url": "https://x.com/natolambert/status/2112567715689042021",
+          "source": "Nathan Lambert X",
+          "sourceId": "person-nathan-lambert-x",
+          "quote": "We found DeepSeek V4.1 Flash 1017 beats GPT 6 Sol on our multi-step offensive cybersecurity task."
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2112565702552940794",
+          "source": "OpenAI Developers X",
+          "sourceId": "org-openai-devs-x",
+          "quote": "You can now automate recurring engineering work with team tasks in ChatGPT, like pulling together what shipped and what’s blocked every Friday."
+        },
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
+          "source": "Google DeepMind X",
+          "sourceId": "org-google-deepmind-x",
+          "quote": "Gemini 4 Argon built a 3D periodic table synced to Tom Lehrer’s song, “The Elements.”"
+        },
+        {
+          "url": "https://x.com/du_yilun/status/2112557187243377000",
+          "source": "杜亦伦 Yilun Du X",
+          "sourceId": "person-yilun-du-x",
+          "quote": "Market-Based Post-Training (MPT), which trains LLM agents to cooperatively solve complex embodied tasks by learning both how to act and when to participate."
+        },
+        {
+          "url": "https://x.com/Thom_Wolf/status/2112513796866813956",
+          "source": "Thomas Wolf X",
+          "sourceId": "person-thomas-wolf-x",
+          "quote": "Introducing DeepInfer, our in-house inference framework, now fully open source!"
+        },
+        {
+          "url": "https://x.com/natolambert/status/2112509913847210471",
+          "source": "Nathan Lambert X",
+          "sourceId": "person-nathan-lambert-x",
+          "quote": "Introducing DeepInfer, our in-house inference framework, now fully open source!"
+        },
+        {
+          "url": "https://x.com/deepseek_ai/status/2112476496283775135",
+          "source": "DeepSeek X",
+          "sourceId": "org-deepseek-x",
+          "quote": "🚀 Introducing DeepInfer, our in-house inference framework, now fully open source!"
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2112489626061738209",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "Start with a harness (I like deepagents)"
+        },
+        {
+          "url": "https://x.com/badlogicgames/status/2112459954292506766",
+          "source": "Mario Zechner X",
+          "sourceId": "person-mario-zechner-x",
+          "quote": "We all know @pidotdev is a masterclass in nailing the core primitives. How do they do it?"
+        }
+      ]
+    }
+  ],
+  "finance_briefs": [
+    {
+      "title": "印度Jio启动32亿美元创纪录IPO",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-21/jio-s-record-3-2-billion-ipo-puts-india-s-market-muscle-to-the-test",
+      "source": "Bloomberg Markets",
+      "summary": "Jio已从贝莱德、富达和资本集团等锚定投资者处募得8.54亿美元，此次发行将检验印度资本市场的深度与承接能力。",
+      "importance": 9
+    },
+    {
+      "title": "马斯克称特斯拉与SpaceX正考虑合并",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "summary": "马斯克表示两家公司均已成立特别委员会评估潜在合并，若成行将造就横跨电动汽车与航天的超级企业实体。",
+      "importance": 9
+    },
+    {
+      "title": "AI概念股因Super Micro强劲业绩反弹",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-20/ai-stocks-rally-after-super-micro-preliminary-sales-bring-relief",
+      "source": "Bloomberg Markets",
+      "summary": "服务器厂商Super Micro Computer发布强劲初步业绩后，AI相关公司股价在盘后交易中集体上涨，缓解市场对AI基建需求的担忧。",
+      "importance": 8
+    },
+    {
+      "title": "谷歌云故障波及英国多家银行与网站",
+      "url": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "summary": "Revolut等数字银行服务中断，多家网站受影响，凸显云基础设施集中化风险。谷歌后续确认问题已解决。",
+      "importance": 7
+    },
+    {
+      "title": "韩国AI算力商Elice上市首日大跌后涨停",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-21/korean-ai-supplier-elice-jumps-by-daily-limit-after-debut-slump",
+      "source": "Bloomberg Markets",
+      "summary": "Elice上市首日暴跌32%后次日涨停基本收复失地，受美国科技公司乐观财报提振，反映AI供应链板块的高波动性。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "美国禁止联邦机构使用DeepSeek，中方批评政治化操弄",
+      "url": "https://www.nytimes.com/2026/10/20/world/asia/china-deepseek-us-ban.html",
+      "source": "NYT World",
+      "summary": "美国国土安全部下令移除DeepSeek产品，称存在敏感数据流向中国风险；中国外交部回应反对将经贸问题政治化，反映AI产品安全审查成为地缘博弈新前沿。（多家报道）",
+      "importance": 9
+    },
+    {
+      "title": "英国将向沙特派遣台风战斗机防御胡塞袭击",
+      "url": "https://www.nytimes.com/2026/10/20/world/europe/uk-saudi-arabia-houthis-raf-typhoon-fighter-jets.html",
+      "source": "NYT World",
+      "summary": "在伊朗支持的胡塞武装袭击激增后，英国宣布派遣皇家空军台风战斗机赴沙特阿拉伯，保护当地石油基础设施安全。",
+      "importance": 8
+    },
+    {
+      "title": "德国投资峰会斩获2250亿欧元承诺",
+      "url": "https://www.dw.com/zh/投资德国峰会斩逾2250亿欧元承诺-默茨以-可预测-德国人形象招商/a-79715886?maca=chi-rss-chi-all-1127-rdf",
+      "source": "DW 中文",
+      "summary": "默茨以「可预测」德国人形象招商，亚马逊承诺2027年向德投资160亿欧元，政府同时宣布与英伟达深化AI合作，但能源价格与劳动力成本仍是投资者顾虑。",
+      "importance": 7
+    }
+  ],
+  "edition": {
+    "date": "2026-10-21",
+    "revisionId": "49a72733c7ba2f8a8e1981f96babb175e622a3b755f60e5931aced9736f564a5",
+    "contentHash": "49a72733c7ba2f8a8e1981f96babb175e622a3b755f60e5931aced9736f564a5",
+    "articleHash": "bdd8440ef00903726cf6f111eecd8ffd770e103e652e18e122cd4cfdfd9f9cfe"
+  },
+  "quality_review": {
+    "status": "unavailable",
+    "score": null,
+    "publicationDecision": "delivery_first"
+  }
+}
