@@ -1,0 +1,911 @@
+{
+  "schemaVersion": 1,
+  "documentType": "public-report-projection",
+  "hero_headline": "黄仁勋重返英伟达掌舵，全球科技股应声大涨",
+  "daily_overview": "科技领域，黄仁勋回归英伟达CEO职位引发全球科技股狂欢，公司市值单日飙升近万亿美元，同时Anthropic推出Claude Ship代码审查工具、OpenAI展示预训练曲线并联合微软提出共享训练限额方案，AI Agent生态持续升温。财经方面，日本四大寿险公司因债券抛售录得75亿美元亏损，摩根大通与汇丰在伦敦首次交易数字黄金，赛诺菲以410亿美元收购美国生物科技公司Insmed，德国工业巨头联合成立稀土贸易公司以保障供应链安全。时政领域，俄罗斯巡航导弹落入波兰领土加剧北约东翼紧张，深圳中美俄三方峰会就核风险管控创造政治契机但欧洲担忧自身被边缘化，巴基斯坦飞行员将首赴中国空间站标志中巴航天合作深化。",
+  "editor_note": "黄仁勋回归成为跨市场核心变量，但需区分事件驱动与基本面变化；AI Agent工具密集发布提示产业进入应用落地期，而地缘风险与供应链安全议题持续升温。",
+  "keywords": [
+    "黄仁勋",
+    "英伟达",
+    "AI Agent",
+    "核风险",
+    "稀土供应链",
+    "数字黄金",
+    "VLA机器人",
+    "北约东翼"
+  ],
+  "trading": {
+    "market_overview": "美股板块在前一交易日出现显著日内反弹，SPY 单日上涨 4.71%，QQQ 大涨 7%，但两者仍分别低于 20 日、50 日及 200 日均线，且 5 日累计仍为负值，显示中期趋势尚未修复。NVDA 单日暴涨 31.48%，AAPL、TSLA、META 等亦录得大涨，然而多数科技龙头仍受制于均线空头排列或中性震荡格局。加密市场整体处于极度恐慌状态，恐慌贪婪指数报 11，总市值约 2.10T USD，24 小时下跌 2.54%，BTC 主导率 57.8%，ETH 市值占比 9.9%。BTC-USD 与 ETH-USD 的 RSI 14 分别跌至 25.6 与 28.8 的超卖区域，价格远低于各周期均线，SOL-USD 虽出现 MACD 金叉，但整体仍处弱势整理。中概股方面，PDD 近 5 日反弹 11.56% 并站上短期均线，技术形态相对突出；但阿里巴巴、腾讯控股与京东仍呈空头排列，腾讯 RSI 14 仅 26.2 且逼近 52 周低点，整体板块分化明显。商品与外汇领域，黄金期货 5 日下跌 6.32%，WTI 原油同期下跌 7.2%，双双跌破短期支撑。美元指数 DXY 报 104.33，RSI 14 读数 72.6 接近超买，并逼近 52 周高点；美元兑人民币维持空头排列，接近 52 周低点，整体呈现美元强、商品弱的格局。",
+    "watchlist": [
+      {
+        "symbol": "DX-Y.NYB",
+        "display_name": "美元指数 DXY",
+        "stance": "偏上行",
+        "rationale": "美元指数当前报 104.33，RSI 14 读数 72.6 进入超买区域，且价格仅距 52 周高点 -0.07%。日线级别呈现多头排列，MACD 0.6586 上穿信号线 0.509，5 日涨幅 0.81%，整体技术动能维持强势。"
+      },
+      {
+        "symbol": "PDD",
+        "display_name": "拼多多 (PDD)",
+        "stance": "偏上行",
+        "rationale": "拼多多近 5 日反弹 11.56%，当前价 87.14 已站上 20 日均线 80.50 与 50 日均线 79.68。RSI 14 升至 63.5，MACD 0.8447 上穿信号线 0.1409 形成金叉，短期动量偏向积极，尽管仍受压于 200 日均线 89.18。"
+      },
+      {
+        "symbol": "BTC-USD",
+        "display_name": "Bitcoin",
+        "stance": "偏下行",
+        "rationale": "BTC 当前价 60233.55，显著低于 20 日、50 日与 200 日均线（分别为 67504.64、75647.47、72132.32）。RSI 14 读数 25.6 处于超卖区间，MACD -4763.65 与信号线 -4366.92 维持空头排列，近 5 日下跌 2.7%，技术形态承压。"
+      },
+      {
+        "symbol": "0700.HK",
+        "display_name": "腾讯控股 (0700.HK)",
+        "stance": "偏下行",
+        "rationale": "腾讯控股当前价 341.6，较 52 周低点仅高 2.58%，5 日跌幅达 9.15%。RSI 14 跌至 26.2 的超卖水平，价格远低于 20 日 386.92、50 日 407.4 与 200 日 460.5 的均线空头排列，MACD -16.7969 持续下探，弱势格局未改。"
+      },
+      {
+        "symbol": "NVDA",
+        "display_name": "Nvidia",
+        "stance": "中性",
+        "rationale": "NVDA 单日暴涨 31.48%，但当前价 165.05 仍显著低于 20 日 178.91、50 日 206.08 与 200 日 203.24 的所有主要均线。RSI 14 为 42.9，MACD -18.0764 低于信号线 -15.7789，短期剧烈反弹尚未扭转中长期均线压制，技术方向不明。"
+      }
+    ],
+    "risk_caveat": "本报告所有内容仅基于公开行情数据的技术指标进行客观复述，不构成任何投资建议。「过去走势不代表未来表现」，文中涉及的均线排列、MACD 交叉及 RSI 状态等信号「仅供技术指标解读参考」，投资者应结合自身风险承受能力独立判断。",
+    "tickers": [
+      {
+        "symbol": "SPY",
+        "displayName": "S&P 500 ETF",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "PCX",
+        "currentPrice": 722.29,
+        "pct1Day": 4.708543302700872,
+        "pct5Day": -2.3866493568068456,
+        "pct52WeekHigh": -7.5906450704946185,
+        "pct52WeekLow": 14.780383930841595,
+        "sma20": 745.6534912109375,
+        "sma50": 759.4079943847656,
+        "sma200": 732.9136492919922,
+        "rsi14": 41.512160971880576,
+        "macd": -12.739543148254256,
+        "macdSignal": -8.449550732570156,
+        "macdHistogram": -4.2899924156841,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "QQQ",
+        "displayName": "Nasdaq 100 ETF",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NGM",
+        "currentPrice": 651.03,
+        "pct1Day": 6.9981078048660565,
+        "pct5Day": -1.6199471099357803,
+        "pct52WeekHigh": -14.659308392103407,
+        "pct52WeekLow": 17.17602591792656,
+        "sma20": 675.4720031738282,
+        "sma50": 709.7942016601562,
+        "sma200": 683.2677499389648,
+        "rsi14": 42.184608226074054,
+        "macd": -19.5867026550967,
+        "macdSignal": -16.332586668253303,
+        "macdHistogram": -3.2541159868433986,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "AAPL",
+        "displayName": "Apple",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 349.08,
+        "pct1Day": 1.9033169336390507,
+        "pct5Day": -1.0488119485514404,
+        "pct52WeekHigh": -3.2563811213036615,
+        "pct52WeekLow": 43.40645797387232,
+        "sma20": 347.7355010986328,
+        "sma50": 342.12720153808596,
+        "sma200": 303.5954000854492,
+        "rsi14": 52.60533613550105,
+        "macd": 2.4786873208488487,
+        "macdSignal": 3.2414275662119714,
+        "macdHistogram": -0.7627402453631227,
+        "trend": "bullish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 2
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "MSFT",
+        "displayName": "Microsoft",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 492.5,
+        "pct1Day": 1.6469931411029877,
+        "pct5Day": -4.920942627258404,
+        "pct52WeekHigh": -11.91987838683716,
+        "pct52WeekLow": 41.03665521191295,
+        "sma20": 520.9514953613282,
+        "sma50": 519.5783984375,
+        "sma200": 444.0892488098145,
+        "rsi14": 39.07201894185343,
+        "macd": -7.218355701713108,
+        "macdSignal": -2.0633335116634637,
+        "macdHistogram": -5.155022190049644,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "NVDA",
+        "displayName": "Nvidia",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 165.05,
+        "pct1Day": 31.482515418633938,
+        "pct5Day": 5.706417730998324,
+        "pct52WeekHigh": -32.181452109956034,
+        "pct52WeekLow": 32.570281124498,
+        "sma20": 178.9095016479492,
+        "sma50": 206.08220123291017,
+        "sma200": 203.2436001586914,
+        "rsi14": 42.87261662228065,
+        "macd": -18.076376358586288,
+        "macdSignal": -15.778862708554383,
+        "macdHistogram": -2.297513650031904,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "GOOGL",
+        "displayName": "Alphabet",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 282.1,
+        "pct1Day": 6.336458559927896,
+        "pct5Day": -0.5709859064334765,
+        "pct52WeekHigh": -30.961063116419073,
+        "pct52WeekLow": 6.767088032700021,
+        "sma20": 287.714501953125,
+        "sma50": 320.9548004150391,
+        "sma200": 336.76964950561523,
+        "rsi14": 41.035921079692294,
+        "macd": -12.74344431043221,
+        "macdSignal": -12.99715605355903,
+        "macdHistogram": 0.25371174312681966,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 0
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "TSLA",
+        "displayName": "Tesla",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 385.46,
+        "pct1Day": 11.462608245976151,
+        "pct5Day": 1.5062963903524085,
+        "pct52WeekHigh": -22.7271816049556,
+        "pct52WeekLow": 29.6186697155155,
+        "sma20": 384.4904983520508,
+        "sma50": 376.16539794921874,
+        "sma200": 381.5346490478516,
+        "rsi14": 52.08947196536034,
+        "macd": -0.9677282726669318,
+        "macdSignal": 1.1427114158415663,
+        "macdHistogram": -2.110439688508498,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "META",
+        "displayName": "Meta",
+        "group": "us-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 597.6,
+        "pct1Day": 6.554448930943457,
+        "pct5Day": -4.5992200602917155,
+        "pct52WeekHigh": -23.366930830191585,
+        "pct52WeekLow": 14.865644101026415,
+        "sma20": 616.9165008544921,
+        "sma50": 675.2935986328125,
+        "sma200": 628.2726473999023,
+        "rsi14": 41.74886672306106,
+        "macd": -19.682010716051764,
+        "macdSignal": -17.45416505179667,
+        "macdHistogram": -2.227845664255092,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 1
+          }
+        ]
+      },
+      {
+        "symbol": "BTC-USD",
+        "displayName": "Bitcoin",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 60233.55,
+        "pct1Day": -1.5968283878787026,
+        "pct5Day": -2.6950262594509176,
+        "pct52WeekHigh": -38.44964163309851,
+        "pct52WeekLow": 9.218538546613411,
+        "sma20": 67504.6380859375,
+        "sma50": 75647.474140625,
+        "sma200": 72132.31873046875,
+        "rsi14": 25.569418236352135,
+        "macd": -4763.649969506769,
+        "macdSignal": -4366.922180306586,
+        "macdHistogram": -396.727789200183,
+        "trend": "neutral",
+        "rsiState": "oversold",
+        "signals": [
+          {
+            "type": "rsi-oversold",
+            "label": "RSI 超卖"
+          }
+        ]
+      },
+      {
+        "symbol": "ETH-USD",
+        "displayName": "Ethereum",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 1695.11,
+        "pct1Day": -0.8041260355270576,
+        "pct5Day": -3.4229813023111273,
+        "pct52WeekHigh": -50.81823570492045,
+        "pct52WeekLow": 12.519299624428964,
+        "sma20": 1910.6129455566406,
+        "sma50": 2205.3764575195314,
+        "sma200": 2116.300869140625,
+        "rsi14": 28.846830258467634,
+        "macd": -161.5340671199092,
+        "macdSignal": -154.908875087761,
+        "macdHistogram": -6.625192032148192,
+        "trend": "neutral",
+        "rsiState": "oversold",
+        "signals": [
+          {
+            "type": "rsi-oversold",
+            "label": "RSI 超卖"
+          }
+        ]
+      },
+      {
+        "symbol": "SOL-USD",
+        "displayName": "Solana",
+        "group": "crypto",
+        "currency": "USD",
+        "exchangeName": "CCC",
+        "currentPrice": 71.43,
+        "pct1Day": -0.7665775144311421,
+        "pct5Day": -2.2390128080054197,
+        "pct52WeekHigh": -51.806822475306305,
+        "pct52WeekLow": 18.232775058793624,
+        "sma20": 77.85507202148438,
+        "sma50": 93.22658996582031,
+        "sma200": 88.13718482971191,
+        "rsi14": 31.039152044011928,
+        "macd": -6.815053351140065,
+        "macdSignal": -7.114276233156347,
+        "macdHistogram": 0.29922288201628167,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 1
+          }
+        ]
+      },
+      {
+        "symbol": "BABA",
+        "displayName": "阿里巴巴 (BABA)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "currentPrice": 86.04,
+        "pct1Day": 6.117412502383017,
+        "pct5Day": -5.054074826492732,
+        "pct52WeekHigh": -52.49033683048039,
+        "pct52WeekLow": 6.27470355731227,
+        "sma20": 96.69399986267089,
+        "sma50": 103.86619964599609,
+        "sma200": 120.4488500213623,
+        "rsi14": 33.11198516276906,
+        "macd": -5.906630838570834,
+        "macdSignal": -4.295737341889121,
+        "macdHistogram": -1.6108934966817126,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "PDD",
+        "displayName": "拼多多 (PDD)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 87.14,
+        "pct1Day": 4.134798855408478,
+        "pct5Day": 11.560618767235976,
+        "pct52WeekHigh": -30.488194001276327,
+        "pct52WeekLow": 21.128718376424803,
+        "sma20": 80.49599990844726,
+        "sma50": 79.68059982299805,
+        "sma200": 89.17654987335204,
+        "rsi14": 63.49450814700095,
+        "macd": 0.8447211822105061,
+        "macdSignal": 0.14093965635268946,
+        "macdHistogram": 0.7037815258578166,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 2
+          }
+        ]
+      },
+      {
+        "symbol": "JD",
+        "displayName": "京东 (JD)",
+        "group": "china-equity",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "currentPrice": 25.31,
+        "pct1Day": 1.6465879026142958,
+        "pct5Day": -8.097316054445178,
+        "pct52WeekHigh": -26.20991253644315,
+        "pct52WeekLow": 3.2724008487024627,
+        "sma20": 26.73499984741211,
+        "sma50": 26.661400032043456,
+        "sma200": 28.444050083160402,
+        "rsi14": 40.79200499692669,
+        "macd": -0.343686319647329,
+        "macdSignal": -0.050818306549390874,
+        "macdHistogram": -0.2928680130979381,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 4
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "0700.HK",
+        "displayName": "腾讯控股 (0700.HK)",
+        "group": "china-equity",
+        "currency": "HKD",
+        "exchangeName": "HKG",
+        "currentPrice": 341.6,
+        "pct1Day": -0.6976744186046445,
+        "pct5Day": -9.14893617021276,
+        "pct52WeekHigh": -46.5414710485133,
+        "pct52WeekLow": 2.582582582582589,
+        "sma20": 386.91999969482424,
+        "sma50": 407.3999987792969,
+        "sma200": 460.4985003662109,
+        "rsi14": 26.163511344070088,
+        "macd": -16.796923500942114,
+        "macdSignal": -10.910766732158882,
+        "macdHistogram": -5.886156768783232,
+        "trend": "bearish",
+        "rsiState": "oversold",
+        "signals": [
+          {
+            "type": "rsi-oversold",
+            "label": "RSI 超卖"
+          },
+          {
+            "type": "near-52w-low",
+            "label": "接近 52 周低"
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "GC=F",
+        "displayName": "黄金期货",
+        "group": "commodity-fx",
+        "currency": "USD",
+        "exchangeName": "CMX",
+        "currentPrice": 3619.8,
+        "pct1Day": -0.865418830828871,
+        "pct5Day": -6.324723209464277,
+        "pct52WeekHigh": -35.201031112384086,
+        "pct52WeekLow": 3.3372348625424673,
+        "sma20": 3900.064978027344,
+        "sma50": 4082.5919873046873,
+        "sma200": 4430.740495605469,
+        "rsi14": 32.00083031580169,
+        "macd": -131.88504269406212,
+        "macdSignal": -99.40549142576036,
+        "macdHistogram": -32.47955126830176,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "CL=F",
+        "displayName": "WTI 原油期货",
+        "group": "commodity-fx",
+        "currency": "USD",
+        "exchangeName": "NYM",
+        "currentPrice": 79.82,
+        "pct1Day": -0.43657000990290007,
+        "pct5Day": -7.19683988197813,
+        "pct52WeekHigh": -33.19383997321728,
+        "pct52WeekLow": 45.180065478355765,
+        "sma20": 89.4904998779297,
+        "sma50": 93.20440017700196,
+        "sma200": 88.45365007400513,
+        "rsi14": 31.56163155821146,
+        "macd": -3.7985574441866845,
+        "macdSignal": -2.8132112543653793,
+        "macdHistogram": -0.9853461898213052,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": []
+      },
+      {
+        "symbol": "USDCNY=X",
+        "displayName": "美元 / 人民币",
+        "group": "commodity-fx",
+        "currency": "CNY",
+        "exchangeName": "CCY",
+        "currentPrice": 6.664,
+        "pct1Day": -0.19469890201050474,
+        "pct5Day": -0.0029985460623520722,
+        "pct52WeekHigh": -6.228013395998094,
+        "pct52WeekLow": 0.2406738868832734,
+        "sma20": 6.668555021286011,
+        "sma50": 6.685768013000488,
+        "sma200": 6.773252983093261,
+        "rsi14": 41.72813824367412,
+        "macd": -0.004840027811614966,
+        "macdSignal": -0.00596399358443276,
+        "macdHistogram": 0.0011239657728177935,
+        "trend": "bearish",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "near-52w-low",
+            "label": "接近 52 周低"
+          },
+          {
+            "type": "below-sma50-sma200",
+            "label": "空头排列"
+          }
+        ]
+      },
+      {
+        "symbol": "^VIX",
+        "displayName": "VIX 恐慌指数",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "CXI",
+        "currentPrice": 26.62,
+        "pct1Day": -25.828920443844122,
+        "pct5Day": 16.193802607148292,
+        "pct52WeekHigh": -33.49987509367974,
+        "pct52WeekLow": 98.95366218236174,
+        "sma20": 22.110499954223634,
+        "sma50": 18.625600032806396,
+        "sma200": 18.703200030326844,
+        "rsi14": 55.895387934925,
+        "macd": 2.817757154626264,
+        "macdSignal": 1.8888134665361098,
+        "macdHistogram": 0.9289436880901543,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bull-cross",
+            "label": "MACD 金叉",
+            "daysAgo": 4
+          }
+        ]
+      },
+      {
+        "symbol": "^TNX",
+        "displayName": "10Y 美债收益率 (%)",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "CGI",
+        "currentPrice": 4.918,
+        "pct1Day": 0.12214618261872622,
+        "pct5Day": -3.9640660122919864,
+        "pct52WeekHigh": -8.314690529455625,
+        "pct52WeekLow": 0,
+        "sma20": 4.983300018310547,
+        "sma50": 5.075960006713867,
+        "sma200": 4.60649498462677,
+        "rsi14": 41.887150431343265,
+        "macd": -0.010954753235468573,
+        "macdSignal": -0.00920944573768194,
+        "macdHistogram": -0.0017453074977866329,
+        "trend": "neutral",
+        "rsiState": "normal",
+        "signals": [
+          {
+            "type": "macd-bear-cross",
+            "label": "MACD 死叉",
+            "daysAgo": 0
+          },
+          {
+            "type": "near-52w-low",
+            "label": "接近 52 周低"
+          }
+        ]
+      },
+      {
+        "symbol": "DX-Y.NYB",
+        "displayName": "美元指数 DXY",
+        "group": "macro",
+        "currency": "USD",
+        "exchangeName": "NYB",
+        "currentPrice": 104.328,
+        "pct1Day": 0.007669004217013181,
+        "pct5Day": 0.8097421524093441,
+        "pct52WeekHigh": -0.07183701617769876,
+        "pct52WeekLow": 9.186813186813193,
+        "sma20": 102.78590126037598,
+        "sma50": 102.07676040649415,
+        "sma200": 100.0795902633667,
+        "rsi14": 72.62299871055943,
+        "macd": 0.6585587227084915,
+        "macdSignal": 0.5090363915980199,
+        "macdHistogram": 0.14952233111047153,
+        "trend": "bullish",
+        "rsiState": "overbought",
+        "signals": [
+          {
+            "type": "rsi-overbought",
+            "label": "RSI 超买"
+          },
+          {
+            "type": "near-52w-high",
+            "label": "接近 52 周高"
+          },
+          {
+            "type": "above-sma50-sma200",
+            "label": "多头排列"
+          }
+        ]
+      }
+    ],
+    "crypto_fear_greed": {
+      "value": 11,
+      "classification": "Extreme Fear",
+      "classificationCn": "极度恐慌",
+      "timestamp": "2026-11-24T00:00:00.000Z"
+    },
+    "crypto_global": {
+      "totalMarketCapUsd": 2095011831164.7883,
+      "total24hVolumeUsd": 94016437545.38338,
+      "marketCapChangePct24h": -2.536715466605577,
+      "btcDominance": 57.79328867145369,
+      "ethDominance": 9.878755507172098,
+      "activeCryptocurrencies": 21291
+    },
+    "generated_at": "2026-11-24T08:28:06.430Z"
+  },
+  "deliveryPolicyVersion": "daily-delivery-v1",
+  "tech_briefs": [
+    {
+      "title": "Anthropic推出Claude Ship自动代码审查工具",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+      "source": "TechCrunch AI",
+      "summary": "Anthropic发布Claude Ship，允许AI代理自动审查、修复并批准代码变更，旨在缓解AI生成代码激增带来的审批瓶颈，提升开发效率。",
+      "importance": 8
+    },
+    {
+      "title": "OpenAI公开预训练曲线并联合微软提共享方案",
+      "url": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/",
+      "source": "Latent Space",
+      "summary": "OpenAI罕见公开内部损失曲线，展示模型训练进展，并与微软共同提出共享训练限额方案，引发业界对算力分配与竞争格局的关注。",
+      "importance": 8
+    },
+    {
+      "title": "干预鲁棒VLA提升机器人部署安全性",
+      "url": "https://arxiv.org/abs/2611.28289",
+      "source": "arXiv cs.LG",
+      "summary": "论文提出干预鲁棒视觉-语言-动作模型，通过多样化演示数据结合安全过滤器，增强机器人在人工干预与分布偏移场景下的鲁棒性与安全性，解决VLA模型安全关键场景覆盖不足问题。",
+      "importance": 7
+    },
+    {
+      "title": "SWAM状态感知模型增强多智能体3D环境一致性",
+      "url": "https://arxiv.org/abs/2611.30042",
+      "source": "arXiv cs.AI",
+      "summary": "针对交互式世界模型难以可靠刻画独立NPC状态演化的问题，SWAM显式建模多智能体3D环境中的NPC状态，提升生成环境的动态一致性与可控性，适用于复杂虚拟场景构建。",
+      "importance": 6
+    },
+    {
+      "title": "今日 X 技术摘要",
+      "url": "https://x.com/Alibaba_Qwen/status/2125121515465461969",
+      "source": "Qwen X",
+      "summary": "含原文摘录；未完成全部帖子的模型归纳。\nQwen4 Max 在 Pendev 上线，设计系统能力提升：Qwen 官方宣布 Qwen4 Max 在 Pendev 上线；Pendev 称其在遵循设计系统与创意思考上超越预期，向所有订阅者开放。 [1]\nArtificial Analysis 推出编码智能体 Harness 对比：固定模型、更换 13 种 harness 测试 GPT-6 Luna 与 GLM-5.3-Flash：最优 harness 因模型而异，harness 对成本影响大于分数。 [2]\nGPT-6 Cyber 验证 948 个 Linux 内核漏洞：OpenAI 称 GPT-6 Cyber 在一次运行中验证 948 个可致本地 root 提权的 Linux 内核漏洞并生成补丁供审查，并与维护者协作上游修复。 [3][4]\nEarendil 的 Armin 看好 Ladybird 进入 alpha：Ladybird 浏览器发布 macOS 与 Linux 的 alpha 下载；Armin Ronacher 称其表现令人印象深刻，看好 Web 获得应有竞争。 [5]\n提出人工集体智能研究方向：Yilun Du 与 Zhenting Qi 发布论文式文章，探讨多智能体系统在规模扩展时的局限、专业化协作及对齐与可控性。 [6]\nGPT-6.2 Sol 在 ChatGPT 聊天标签页推送：ChatGPT 称向 Plus 等用户推送为日常对话优化的 GPT-6.2 Sol，改进复杂请求、图片细节识别与在线比价；Tibo 称回答质量显著提升。 [7]\nInkling 2 Mini 进入 Agent Arena 指数第18：Thinking Machines 的 Inkling 2 Mini（26B 循环 transformer）开源，Agent Arena 开源模型第18；比 Small 分低但单任务成本低 28%。 [8]\nOpenAI 与 Cisco 推出开源运行时 Shirudo：Shirudo 为开源 Linux 运行时，允许智能体编写动态 eBPF 防护规则抵御漏洞利用，在不停机情况下争取补丁部署时间。 [9]\nAgent Arena 指数显示智能体竞争格局变化：基于 320 万会话的 Agent Arena 指数显示 Anthropic 在真实任务领先，Google DeepMind 超过 OpenAI，阿里 Qwen 与腾讯混元追赶。 [10]\n@GoogleDeepMind：“Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactive 3D.” [11]\n@hwchase17 分享 @LangChain：“Content Studio is the design agent we use every day at LangChain that can create:” [12]\n@EpochAIResearch：“We are publishing 4 new benchmark reviews: 1 benchmark is Verified, 3 are Flawed.” [13]\n@OpenAIDevs：“GPT-6.2 can make sense of the world around us, simulate how things work, and help you build worlds o” [14]\n@xiao_ted 分享 @danijar：“Our robot brain pretrains on massive amounts of internet video to learn about objects, physical inte” [15]\n@thsottiaux 分享 @_samirism：“quick recap of dots improvements we rolled out over the past few days, starting with a new home for ” [16]\n@thsottiaux：“New ChatGPT Business workspaces created by Nov 30 get double the included usage for every seat type ” [17]\n@ArtificialAnlys：“Phonic 1.1 (High) is the new #1 on the Artificial Analysis Speech to Speech Index at 89.1, taking th” [18]\n@GoogleDeepMind：“Using teams of Gemini 4 agents, we’ve built new quantum circuits that cut future simulation costs by” [19]\n@arena：“Muse Ember (Max): 1093 pts | $0.02” [20]\n@LangChain 分享 @hwchase17：“all our agents at langchain (internal GTM &amp; content agents, LangSmith Engine) have a learning lo” [21]\n@Thom_Wolf 分享 @mhrezaeics：“record Inkling 2 Mini on a plane to demonstrate its local performance without wifi” [22]\n@Zai_org：“Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer.” [23]",
+      "importance": 8,
+      "kind": "twitter-radar",
+      "summaryVersion": "x-daily-v2",
+      "summaryCoverage": {
+        "inputPosts": 23,
+        "representedPosts": 23,
+        "inputHash": "107004f5d27858bb9ec679dc72ebab84ae18ee5001ae9e18fb56c141a34761d7",
+        "complete": true
+      },
+      "references": [
+        {
+          "url": "https://x.com/Alibaba_Qwen/status/2125121515465461969",
+          "source": "Qwen X",
+          "sourceId": "org-qwen-x",
+          "quote": "That has changed with Qwen 4 Max!"
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2125069725977968935",
+          "source": "Artificial Analysis X",
+          "sourceId": "org-artificial-analysis-x",
+          "quote": "Harness Comparisons hold the model fixed and change only the harness, to show how the harness affects a model's performance."
+        },
+        {
+          "url": "https://x.com/OpenAI/status/2125007927098699827",
+          "source": "OpenAI X",
+          "sourceId": "org-openai-x",
+          "quote": "In one run, GPT-6 Cyber helped us validate 948 Linux kernel bugs that could grant local root access and generate patches for review."
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2125027477877887231",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "Worth listening to if you're curious what goes on in the minds of the people at OpenAI"
+        },
+        {
+          "url": "https://x.com/mitsuhiko/status/2124994000750842158",
+          "source": "Armin Ronacher X",
+          "sourceId": "person-armin-ronacher-x",
+          "quote": "Ladybird is now in alpha 🐞"
+        },
+        {
+          "url": "https://x.com/du_yilun/status/2125021560583151773",
+          "source": "杜亦伦 Yilun Du X",
+          "sourceId": "person-yilun-du-x",
+          "quote": "Excited to share our essay on artificial collective intelligence: what limits current multi-agent systems, and how agents can learn to specialize and work together."
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2124998553856844186",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "We’re rolling out a version of GPT-6.2 Sol in the Chat tab, optimized for everyday conversation."
+        },
+        {
+          "url": "https://x.com/arena/status/2124981167279546382",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "Inkling 2 Mini by @thinkymachines has landed in the Agent Arena Index at #18 among open models."
+        },
+        {
+          "url": "https://x.com/OpenAI/status/2124980590717911527",
+          "source": "OpenAI X",
+          "sourceId": "org-openai-x",
+          "quote": "We’re introducing Shirudo, an open-source Linux runtime allowing agents to defend systems without downtime."
+        },
+        {
+          "url": "https://x.com/arena/status/2124966751544791340",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "@AnthropicAI extends its lead in agentic real-world tasks, while @GoogleDeepMind has climbed past @OpenAI."
+        },
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2124959312606818597",
+          "source": "Google DeepMind X",
+          "sourceId": "org-google-deepmind-x",
+          "quote": "Gemini 4 Neon recreated Alan Turing’s 1936 study at @Cambridge_Uni in interactive 3D."
+        },
+        {
+          "url": "https://x.com/hwchase17/status/2124958660061446569",
+          "source": "Harrison Chase X",
+          "sourceId": "person-harrison-chase-x",
+          "quote": "Content Studio is the design agent we use every day at LangChain that can create:"
+        },
+        {
+          "url": "https://x.com/EpochAIResearch/status/2124945252725510614",
+          "source": "Epoch AI X",
+          "sourceId": "org-epoch-ai-x",
+          "quote": "We are publishing 4 new benchmark reviews: 1 benchmark is Verified, 3 are Flawed."
+        },
+        {
+          "url": "https://x.com/OpenAIDevs/status/2124944225955639430",
+          "source": "OpenAI Developers X",
+          "sourceId": "org-openai-devs-x",
+          "quote": "GPT-6.2 can make sense of the world around us, simulate how things work, and help you build worlds of your own."
+        },
+        {
+          "url": "https://x.com/xiao_ted/status/2124926056041959622",
+          "source": "Ted Xiao X",
+          "sourceId": "person-ted-xiao-x",
+          "quote": "Our robot brain pretrains on massive amounts of internet video to learn about objects, physical interactions, and how tasks unfold."
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2124923055072043052",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "quick recap of dots improvements we rolled out over the past few days, starting with a new home for your dot in the latest ChatGPT app."
+        },
+        {
+          "url": "https://x.com/thsottiaux/status/2124922313019953319",
+          "source": "Tibo / Thibault Sottiaux X",
+          "sourceId": "person-thibault-sottiaux-x",
+          "quote": "New ChatGPT Business workspaces created by Nov 30 get double the included usage for every seat type through Dec 31."
+        },
+        {
+          "url": "https://x.com/ArtificialAnlys/status/2124918494110298127",
+          "source": "Artificial Analysis X",
+          "sourceId": "org-artificial-analysis-x",
+          "quote": "Phonic 1.1 (High) is the new #1 on the Artificial Analysis Speech to Speech Index at 89.1, taking the top spot from Phonic's own Phonic 1 (87.1)"
+        },
+        {
+          "url": "https://x.com/GoogleDeepMind/status/2124911073266413634",
+          "source": "Google DeepMind X",
+          "sourceId": "org-google-deepmind-x",
+          "quote": "Using teams of Gemini 4 agents, we’ve built new quantum circuits that cut future simulation costs by up to 10 times."
+        },
+        {
+          "url": "https://x.com/arena/status/2124901393488048410",
+          "source": "Arena X",
+          "sourceId": "org-arena-x",
+          "quote": "Muse Ember (Max): 1093 pts | $0.02"
+        },
+        {
+          "url": "https://x.com/LangChain/status/2124881082965258276",
+          "source": "LangChain X",
+          "sourceId": "org-langchain-x",
+          "quote": "all our agents at langchain (internal GTM &amp; content agents, LangSmith Engine) have a learning loop with similar pieces\n\nwrote about what we think makes up a"
+        },
+        {
+          "url": "https://x.com/Thom_Wolf/status/2124824783325966506",
+          "source": "Thomas Wolf X",
+          "sourceId": "person-thomas-wolf-x",
+          "quote": "record Inkling 2 Mini on a plane to demonstrate its local performance without wifi"
+        },
+        {
+          "url": "https://x.com/Zai_org/status/2124811995912286352",
+          "source": "Z.ai X",
+          "sourceId": "org-zai-x",
+          "quote": "Introducing GLM-5.4: Generalized Coding with Our First Loop Transformer."
+        }
+      ]
+    }
+  ],
+  "finance_briefs": [
+    {
+      "title": "黄仁勋回归英伟达，市值单日飙升近万亿美元",
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC Business",
+      "summary": "黄仁勋重返英伟达CEO职位，公司股价大涨带动纳斯达克指数上扬6.5%，市值增加近万亿美元，科技股与新兴市场随之反弹。（多家报道）",
+      "importance": 10
+    },
+    {
+      "title": "日本四大寿险公司债券抛售亏损75亿美元",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/japan-s-top-life-insurers-book-7-5-billion-in-bond-sale-losses",
+      "source": "Bloomberg Markets",
+      "summary": "日本四大寿险公司上半财年出售低利率时期购入的政府债券，合计亏损逾1.2万亿日元（75亿美元），旨在以更高收益率再投资。",
+      "importance": 7
+    },
+    {
+      "title": "摩根大通与汇丰在伦敦首次交易数字黄金",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/jpmorgan-hsbc-trade-digital-gold-in-london-for-the-first-time",
+      "source": "Bloomberg Markets",
+      "summary": "主要贵金属交易商首次在伦敦交易新型数字黄金，测试可能重塑全球最大黄金交易中心基础设施的系统，标志传统贵金属市场数字化探索。",
+      "importance": 7
+    },
+    {
+      "title": "赛诺菲410亿美元收购美国生物科技公司Insmed",
+      "url": "https://www.ft.com/content/94e3ca43-cf90-4566-90df-86dd6a1554b2?syn-25a6b1a6=1",
+      "source": "Financial Times",
+      "summary": "法国制药商赛诺菲达成410亿美元交易收购Insmed，为逼近专利悬崖的药品组合补充商业化产品，强化其在罕见病与呼吸系统疾病领域布局。",
+      "importance": 7
+    },
+    {
+      "title": "德国工业巨头联合成立稀土贸易公司",
+      "url": "https://www.ft.com/content/bfcb8ee8-97cc-4ef0-8234-3a8da0d3a814?syn-25a6b1a6=1",
+      "source": "Financial Times",
+      "summary": "德国工业巨头联合成立稀土贸易公司，集中采购和供应关键原材料，反映欧洲制造业对供应链安全的担忧，寻求减少对外部单一来源依赖。",
+      "importance": 6
+    }
+  ],
+  "politics_briefs": [
+    {
+      "title": "俄罗斯导弹落入波兰，北约东翼紧张升级",
+      "url": "https://www.npr.org/2026/11/23/nx-s1-6051013/russian-incursions-into-nato-territory-are-increasing",
+      "source": "NPR World",
+      "summary": "三枚俄罗斯巡航导弹落入波兰领土，北约秘书长吕特寻求安抚东欧成员国，俄罗斯对北约领土的越界行动呈增加趋势。",
+      "importance": 9
+    },
+    {
+      "title": "深圳中美俄峰会创造核风险管控政治契机",
+      "url": "https://thediplomat.com/2026/11/can-the-china-russia-us-summit-turn-political-momentum-into-nuclear-risk-reduction/",
+      "source": "The Diplomat",
+      "summary": "中美俄三方峰会在深圳举行，为三大核武国创造前所未有的政治 opening，但欧洲担忧被边缘化，能否转化为实际核风险削减尚待观察。（多家报道）",
+      "importance": 8
+    },
+    {
+      "title": "巴基斯坦飞行员将首赴中国空间站",
+      "url": "https://www.aljazeera.com/news/2026/11/24/pakistans-zeeshan-ali-set-for-historic-flight-to-chinas-space-station?traffic_source=rss",
+      "source": "Al Jazeera",
+      "summary": "巴基斯坦空军飞行员齐尚·阿里将前往中国天宫空间站停留约一周，与中国航天员共同开展实验，标志中巴航天合作的历史性突破。",
+      "importance": 7
+    }
+  ],
+  "edition": {
+    "date": "2026-11-24",
+    "revisionId": "d2e3eb17f65743e7b4bb6218fb642ec083d1041f68468555927772b5ad9d8b38",
+    "contentHash": "d2e3eb17f65743e7b4bb6218fb642ec083d1041f68468555927772b5ad9d8b38",
+    "articleHash": "74d62365fe286cdabbb3995f2570fafda5e17c1b38ca7494eae385448cb43727"
+  },
+  "quality_review": {
+    "attempt": 1,
+    "maxAttempts": 2,
+    "exhausted": true,
+    "status": "failed",
+    "score": 97,
+    "publicationDecision": "delivery_first"
+  }
+}
